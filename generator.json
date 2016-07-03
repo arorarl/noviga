@@ -1,0 +1,125 @@
+{
+	"baseName": "noviga",
+	"entities": [
+		{
+			"name": "user",
+			"attrs": [
+				{
+					"attrName": "username",
+					"attrType": "String",
+					"minLength": "3",
+					"maxLength": "20",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "password",
+					"attrType": "String",
+					"minLength": "3",
+					"maxLength": "20",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "contact_email",
+					"attrType": "String",
+					"minLength": "3",
+					"maxLength": "20",
+					"enumValues": [],
+					"required": true
+				}
+			]
+		},
+		{
+			"name": "business",
+			"attrs": [
+				{
+					"attrName": "name",
+					"attrType": "String",
+					"minLength": "3",
+					"maxLength": "30",
+					"enumValues": [],
+					"required": true
+				}
+			]
+		},
+		{
+			"name": "Chassis",
+			"attrs": [
+				{
+					"attrName": "modelNo",
+					"attrType": "String",
+					"minLength": "3",
+					"maxLength": "20",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "maxSlots",
+					"attrType": "Integer",
+					"min": "1",
+					"max": "100",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "connectionType",
+					"attrType": "Enum",
+					"enumValues": [
+						"USB",
+						" Ethernet"
+					],
+					"required": true
+				}
+			]
+		},
+		{
+			"name": "Module",
+			"attrs": [
+				{
+					"attrName": "modelNo",
+					"attrType": "String",
+					"minLength": "1",
+					"maxLength": "20",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "maxChannels",
+					"attrType": "Integer",
+					"min": "1",
+					"max": "256",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "maxSamplingRate",
+					"attrType": "Integer",
+					"min": "800",
+					"max": "4096000",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "peakVoltRange",
+					"attrType": "Integer",
+					"min": "0",
+					"max": "100",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "type",
+					"attrType": "Enum",
+					"enumValues": [
+						"Analog_Input",
+						" Digital_Input",
+						" Digital_Output"
+					],
+					"required": true
+				}
+			]
+		}
+	],
+	"resources": []
+}
