@@ -119,6 +119,154 @@
 					"required": true
 				}
 			]
+		},
+		{
+			"name": "hardwareSetup",
+			"attrs": [
+				{
+					"attrName": "name",
+					"attrType": "String",
+					"minLength": "1",
+					"maxLength": "20",
+					"enumValues": [],
+					"required": true
+				}
+			]
+		},
+		{
+			"name": "hwchassismap",
+			"attrs": [
+				{
+					"attrName": "slotnumber",
+					"attrType": "Integer",
+					"min": "1",
+					"max": "256",
+					"enumValues": [],
+					"required": true
+				}
+			]
+		},
+		{
+			"name": "hwchaschanmap",
+			"attrs": [
+				{
+					"attrName": "channelnumber",
+					"attrType": "Integer",
+					"min": "1",
+					"max": "256",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "trigger",
+					"attrType": "Enum",
+					"enumValues": [
+						"True",
+						" False"
+					],
+					"required": true
+				}
+			]
+		},
+		{
+			"name": "channelsetup",
+			"attrs": [
+				{
+					"attrName": "name",
+					"attrType": "String",
+					"minLength": "1",
+					"maxLength": "20",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "samplingrate",
+					"attrType": "Integer",
+					"min": "800",
+					"max": "4096000",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "sensitivity",
+					"attrType": "Float",
+					"min": "0.001",
+					"max": "1000.0",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "autorangetime",
+					"attrType": "Integer",
+					"min": "1",
+					"max": "25",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "peakvalue",
+					"attrType": "Float",
+					"min": "0.001",
+					"max": "1000.0",
+					"enumValues": [],
+					"required": true
+				}
+			]
+		},
+		{
+			"name": "quantity",
+			"attrs": [
+				{
+					"attrName": "name",
+					"attrType": "String",
+					"minLength": "3",
+					"maxLength": "20",
+					"enumValues": [],
+					"required": true
+				}
+			]
+		},
+		{
+			"name": "unit",
+			"attrs": [
+				{
+					"attrName": "name",
+					"attrType": "String",
+					"minLength": "1",
+					"maxLength": "50",
+					"enumValues": [],
+					"required": true
+				}
+			]
+		},
+		{
+			"name": "project",
+			"attrs": [
+				{
+					"attrName": "name",
+					"attrType": "String",
+					"minLength": "3",
+					"maxLength": "20",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "created_on",
+					"attrType": "String",
+					"minLength": "3",
+					"maxLength": "50",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "description",
+					"attrType": "String",
+					"minLength": "10",
+					"maxLength": "1000",
+					"enumValues": [],
+					"required": true
+				}
+			]
 		}
 	],
 	"resources": []
